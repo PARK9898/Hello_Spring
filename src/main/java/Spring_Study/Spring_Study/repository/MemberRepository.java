@@ -1,2 +1,14 @@
-package Spring_Study.Spring_Study.repository;public interface MemberRepository {
+package Spring_Study.Spring_Study.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import Spring_Study.Spring_Study.domain.Member;
+
+public interface MemberRepository {
+	Member save(Member member);
+	Optional<Member> findById(Long id);
+	Optional<Member> findByName(String name);
+	List<Member> findAll();
+
 }
