@@ -8,7 +8,12 @@ import Spring_Study.Spring_Study.repository.MemberRepository;
 import Spring_Study.Spring_Study.repository.MemoryMemberRepository;
 
 public class MemberService {
-	private final MemberRepository memberRepository = new MemoryMemberRepository();
+	private final MemberRepository memberRepository;
+
+	public MemberService(MemberRepository memberRepository) {
+		this.memberRepository = memberRepository;
+	} // 생성자 command + n 외부에서 멤버 리포지토리를 넣어주도록 함 // 의존성 주입
+
 	//회원가입
 	public Long join(Member member) {
 		// 같은 이름 중복 회원x
