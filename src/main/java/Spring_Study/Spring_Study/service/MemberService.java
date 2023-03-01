@@ -3,16 +3,21 @@ package Spring_Study.Spring_Study.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import Spring_Study.Spring_Study.domain.Member;
 import Spring_Study.Spring_Study.repository.MemberRepository;
 import Spring_Study.Spring_Study.repository.MemoryMemberRepository;
 
-public class MemberService {
+//@Service
+public class MemberService { // commadn shift t 누르면 테스트 자동으로 만들어줌
 	private final MemberRepository memberRepository;
 
+	//@Autowired 여기서 Autowired 쓰는 이유는 멤버 서비스 측에서 멤버 리포지토리를 필요로 하기 떄문임
 	public MemberService(MemberRepository memberRepository) {
 		this.memberRepository = memberRepository;
-	} // 생성자 command + n 외부에서 멤버 리포지토리를 넣어주도록 함 // 의존성 주입
+	} // 생성자 command + n 외부에서 멤버 리포지토리를 넣어주도록 함 // 의존성주입
 
 	//회원가입
 	public Long join(Member member) {
