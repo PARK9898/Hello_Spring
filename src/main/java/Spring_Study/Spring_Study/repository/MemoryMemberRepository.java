@@ -6,8 +6,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import Spring_Study.Spring_Study.domain.Member;
 
+//@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
 	private static Map<Long,Member> store = new HashMap<>(); // save 할 때 어딘가 저장을 해놔야 되니까 map 사용
