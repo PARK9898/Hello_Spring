@@ -2,15 +2,12 @@ package Spring_Study.service;
 
 import static org.assertj.core.api.Assertions.*;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import Spring_Study.Spring_Study.domain.Member;
-import Spring_Study.Spring_Study.repository.MemberRepository;
-import Spring_Study.Spring_Study.repository.MemoryMemberRepository;
-import Spring_Study.Spring_Study.service.MemberService;
+import Spring_Study.domain.Member;
+import Spring_Study.repository.MemoryMemberRepository;
 
 public class MemberServiceTest {
 
