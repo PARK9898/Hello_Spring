@@ -1,4 +1,4 @@
-package Spring_Study.Spring_Study.controller;
+package Spring_Study.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import Spring_Study.Spring_Study.domain.Member;
-import Spring_Study.Spring_Study.service.MemberService;
+import Spring_Study.domain.Member;
+import Spring_Study.service.MemberService;
 
 @Controller // 이 어노테이션이 있으면 membercontroller 객체를 생성해서 스프링 컨테이너에 넣어둔다. // 컨포넌트 스캔임 ! Controller 안에 컨포넌트 어노테이션 설정이 되어있음
 			// 컨포넌트로 di를 할 수도 있고 자바 코드로 직접 빈을 등록할 수 있음 이거는 스프링 컨테이너에 등록하는것임
