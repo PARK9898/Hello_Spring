@@ -1,4 +1,4 @@
-package Spring_Study.Spring_Study.controller;
+package Spring_Study.controller;
 
 public class MemberForm {
 	private String name;
